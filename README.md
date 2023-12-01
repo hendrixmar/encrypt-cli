@@ -82,5 +82,5 @@ For running the test
 pytest
 ```
 
-I was thinking to give more options like accepting the link of the json file to create a signature
+I was thinking to give more options like accepting the link to download a json file and add the signature
 and then stored in a json output. 
