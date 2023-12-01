@@ -7,18 +7,9 @@ app = typer.Typer()
 
 @app.command()
 def signature(
-        attestation_file: Annotated[
-            typer.FileText,
-            typer.Option(...)
-        ],
-        private_key_file: Annotated[
-            typer.FileText,
-            typer.Option(...)
-        ],
-        output_file: Annotated[
-            str,
-            typer.Option(...)
-        ] = 'control_output.json'
+    attestation_file: Annotated[typer.FileText, typer.Option(...)],
+    private_key_file: Annotated[typer.FileText, typer.Option(...)],
+    output_file: Annotated[str, typer.Option(...)] = "control_output.json",
 ) -> List[Dict[str, str]]:
     private_key = load_pem_string(private_key_file.read())
     attestations_data_signed = [

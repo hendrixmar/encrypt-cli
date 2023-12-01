@@ -71,16 +71,19 @@ To run the application you have run the main file with the following format:
 ```shell
 pip install -r requirements.txt
 ```
+And you require tox installed in your computer
 
 ```shell 
 python main.py ${INPUT_FILE_PATH} ${PRIVATE_KEY_FILE_PATH}
 ```
 
-For running the test 
+For running the test and other processes
 
 ```shell
-pytest
+tox
 ```
+
 
 I was thinking to give more options like accepting the link to download a json file and add the signature
 and then stored in a json output. 
+
